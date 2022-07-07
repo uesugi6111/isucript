@@ -70,10 +70,10 @@ install_alp() {
 install_pt_query_digest() {
   info 'Install pt-query-digest'
   wget https://github.com/percona/percona-toolkit/archive/refs/tags/v3.3.1.tar.gz
-  tar zxvf 3.3.1-test.tar.gz
+  tar zxvf v3.3.1-test.tar.gz
   sudo mv ./percona-toolkit-3.3.1-test/bin/pt-query-digest /usr/bin/
 
-  rm 3.3.1-test.tar.gz
+  rm v3.3.1-test.tar.gz
   rm -rf percona-toolkit-3.3.1-test
 
   success "install pt-query-digest"
