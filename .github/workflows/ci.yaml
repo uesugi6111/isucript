@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run bootstrap
-        run: sudo ./bootstrap
+        run: curl https://raw.githubusercontent.com/uesugi6111/isucript/master/bootstrap -O && chmod +x bootstrap && ./bootstrap
