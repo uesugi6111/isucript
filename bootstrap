@@ -133,7 +133,7 @@ file_check() {
 check() {
   big_info "install checking!"
 
-  COMMANDS=(alp pt-query-digest htop discord.sh)
+  COMMANDS=(alp pt-query-digest htop)
 
   for c in ${COMMANDS[@]}; do
     checking $c
