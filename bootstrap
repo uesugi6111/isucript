@@ -52,7 +52,7 @@ git_config() {
 install_all() { 
   install_alp
   install_pt_query_digest
-  install_discordcat
+  install_discordsh
 }
 
 
@@ -79,13 +79,13 @@ install_pt_query_digest() {
   success "install pt-query-digest"
 }
 
-install_postdiscord() {
-  info 'Install discordcat'
+install_discordsh() {
+  info 'Install discordsh'
 
   wget https://raw.githubusercontent.com/uesugi6111/discord.sh/refs/heads/master/discord.sh
   sudo chmod +x ./discord.sh
 
-  success "install postdiscord"
+  success "install discordsh"
 }
 
 git_init() {
@@ -133,7 +133,7 @@ file_check() {
 check() {
   big_info "install checking!"
 
-  COMMANDS=(alp pt-query-digest htop discordcat)
+  COMMANDS=(alp pt-query-digest htop discord.sh)
 
   for c in ${COMMANDS[@]}; do
     checking $c
